@@ -41,6 +41,8 @@ body{
     width: 12.5rem;
     display: inline-block;
     margin: 0.63rem;
+    overflow: hidden;
+    border: 0.5rem solid #595959;
 }
 
 .close{
@@ -76,11 +78,12 @@ body{
 
 .photo img{
     width: 12.5rem;
-    border: 0.5rem solid #595959;
     filter: grayscale(100%);
 }
 
-.photo img:hover{
+.photo:hover img{
+    opacity: 0.7;
+    transform: scale(1.2);
     filter: none;
 }
 

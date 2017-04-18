@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main-header{
+    background-color: #CA3C25;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 6.4rem;
+    width: 100%;
+    padding: 1.56rem 5rem;
+}
+.main-header a{
+    color: white;
+    margin: 0.63rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.main-header a:hover{
+    border-radius: 0.5rem;
+    background-color: black;
+}
+
+.images-container{
+    max-width: 66rem;
+    margin: 6.4rem auto 0;
+    position: relative;
+}
+
+.photo {
+    position: relative;
+    width: 12.5rem;
+    display: inline-block;
+    margin: 0.63rem;
+}
+
+.close{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+}
+
+.close::before, .close::after{
+    z-index: 1;
+    content: "";
+    width: 1.1rem;
+    height: 0.2rem;
+    background-color: white;
+    top: 1.2rem;
+    position: absolute;
+    cursor: pointer;
+    left: 0.9rem;
+}
+
+.close::before{
+    transform: rotate(45deg);
+}
+
+.close::after{
+    transform: rotate(-45deg);
+}
+
+.close:hover::before, .close:hover::after{
+    background-color: #CA3C25;
+    transition: 0.5s;
+}
+
+.photo img{
+    width: 12.5rem;
+    border: 0.5rem solid #595959;
+    filter: grayscale(100%);
+}
+
+.photo img:hover{
+    filter: none;
+}
+
+.photo figcaption{
+    color: white;
+}
+
+.buttons{
+    max-width: 66rem;
+    margin: 1rem auto;
+    padding: 1rem 0;
+}
+
+.buttons button{
+    background-color: #CA3C25;
+    color: white;
+    width: 21.5rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#btn-origin:hover, #btn-extinction:hover, #btn-restore-photos:hover{
+    background-color: #D4624F;
+}
+
+.buttons button:active{
+    opacity: 0.7;
+}
+
+.section-text{
+    position: relative;
+    margin: auto;
+    max-width: 66rem;
+}
+
+.section-origin-description, .section-extinction-description{
+    display: inline-block;
+    max-width: 30rem;
+    color: #BC8D28;
+    text-align: justify;
+    padding: 0 2rem;
+}
+
+.section-origin-description p, .section-extinction-description p{
+    margin: 1rem 0;
+}
+
+.element-none{
+    display: none;
+}
